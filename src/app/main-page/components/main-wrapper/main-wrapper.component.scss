@@ -1,0 +1,28 @@
+.main-wrapper {
+    padding: 50px 30px 50px 30px;
+    background-image: url("../../../../assets/img/wrapper-background.jpg");
+    background-position: right top;
+    background-size: auto 100%;
+
+    .text-wrapper {
+        max-width: 1000px;
+        margin: auto;
+
+        .main-title {
+            font-family: "Signika";
+            color: white;
+            font-size:48px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        .main-subtitle {
+            font-family: "Signika";
+            color: white;
+            font-size:24px;
+            display: block;
+        }
+    }
+}
+

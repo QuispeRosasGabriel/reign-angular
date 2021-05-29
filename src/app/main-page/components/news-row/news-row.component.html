@@ -1,0 +1,10 @@
+<div class="row-container" (click)="goToUrl()">
+    <div class="title-container">
+        <span class="title">{{story.title}}</span>
+        <span class="author"> -{{story.author}}-</span>
+    </div>
+    <div class="date-container">
+        <span class="title">{{story.createdAt}}</span>
+        <i class="fa fa-trash custom-icon" color="black" (click)="deleteRow()"></i>
+    </div>
+</div>

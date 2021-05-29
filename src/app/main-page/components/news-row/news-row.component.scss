@@ -1,0 +1,60 @@
+.row-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+
+    .title-container {
+        max-width: 85%;
+
+        @media (max-width: 970px) {
+            max-width: 75%;
+        }
+
+        @media (max-width: 570px) {
+            max-width: 65%;
+        }
+
+        @media (max-width: 470px) {
+            max-width: 55%;
+        }
+    }
+
+    .title {
+        font-family: "Signika";
+        color: #333;
+        padding-right: 10px;
+        font-size: 13px;
+    }
+    
+    .author {
+        font-family: "Signika";
+        color: #999;
+        font-size: 13px;
+    }
+
+    .custom-icon {
+        cursor: pointer;
+        padding: 5px;
+        margin: 0px 20px 0px 20px;
+        color: #333;
+
+        @media (max-width: 470px) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    .custom-icon:hover {
+        color: rgb(173, 52, 229);
+        z-index: 10;
+    }
+}
+
+.row-container:hover {
+    background-color: #fafafa;
+}

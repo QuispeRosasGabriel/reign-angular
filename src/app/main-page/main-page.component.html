@@ -1,0 +1,22 @@
+<main-wrapper></main-wrapper>
+<div class="news-list">
+    <div class="list-title-container">
+        <span class="list-title">Most recent hacker stories:</span>
+    </div>
+    <news-row *ngFor="let story of presenter.news; let i=index" [story]="story" [index]="i"
+        (deleteStory)="openModal($event)"></news-row>
+    <div class="pagination">
+        <a href="#" (click)="goToPage(page - 1)" *ngIf="page !== 1">&laquo;</a>
+        <a href="#" [class]="num == page ? 'active': ''" *ngFor="let num of pageArray" (click)="goToPage(num)">{{num}}</a>
+        <a href="#" (click)="goToPage(page + 1)" *ngIf="showNext">&raquo;</a>
+    </div>
+</div>
+<delete-modal id="delete-modal">
+    <div>
+        <span class="modal-title">Are you sure you want to delete this story?</span>
+    </div>
+    <div class="button-container">
+        <button (click)="deleteStory()" class="confirm-button">Confirm</button>
+        <button (click)="closeModal()" class="cancel-button">Cancel</button>
+    </div>
+</delete-modal>

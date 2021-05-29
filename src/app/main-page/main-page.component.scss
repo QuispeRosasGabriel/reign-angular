@@ -1,0 +1,69 @@
+.pagination {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  
+  .pagination a {
+    color: #333;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "Signika";
+  }
+  
+  .pagination a.active {
+    background-color: rgb(173, 52, 229);
+    color: white;
+  }
+
+.news-list {
+    padding: 30px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal-title {
+    font-family: "Signika";
+    color: #333;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.list-title-container {
+    margin-bottom: 10px;
+
+    .list-title {
+        font-family: "Signika";
+        color: rgb(173, 52, 229);
+        font-size:24px;
+    }
+}
+
+.button-container {
+
+    display: flex;
+    justify-content: center;
+
+    .confirm-button {
+        cursor: pointer;
+        color: white;
+        border: none;
+        margin: 20px 10px 0px 10px;
+        padding: 5px 10px 5px 10px;
+        font-family: "Signika";
+        background-color: rgb(173, 52, 229);
+        font-size: 14px;
+    }
+
+    .cancel-button {
+        cursor: pointer;
+        color: rgb(173, 52, 229);
+        border: solid rgb(173, 52, 229) 1px;
+        margin: 20px 10px 0px 10px;
+        padding: 5px 10px 5px 10px;
+        font-family: "Signika";
+        background-color: white;
+        font-size: 14px;
+    }
+}
